@@ -3,7 +3,6 @@ import math
 
 
 class BiquadraticEquation:
-    """Model of a biquadratic equation A*x^4 + B*x^2 + C = 0."""
 
     def __init__(self, a, b, c):
         if a == 0:
@@ -14,7 +13,6 @@ class BiquadraticEquation:
         self.discriminant = self.b ** 2 - 4 * self.a * self.c
 
     def solve(self):
-        """Return only real roots of the equation."""
         if self.discriminant < 0:
             return []
 

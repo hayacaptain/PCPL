@@ -3,7 +3,6 @@ import math
 
 
 def read_coefficient(name, value=None):
-    """Read a coefficient from a command-line argument or keyboard."""
     if value is not None:
         try:
             return float(value)
@@ -19,7 +18,6 @@ def read_coefficient(name, value=None):
 
 
 def solve_biquadratic(a, b, c):
-    """Solve a*x^4 + b*x^2 + c = 0 and return real roots."""
     if a == 0:
         raise ValueError("Коэффициент A не должен быть равен нулю.")
 

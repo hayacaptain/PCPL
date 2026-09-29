@@ -18,7 +18,7 @@ def read_coefficient(name, value=None):
 
 
 def solve_with_pattern(a, b, c):
-    """Solve using structural pattern matching."""
+    """Паттерн матчинг"""
     match a, b, c:
         case (a, b, c) if a == 0:
             raise ValueError("Коэффициент A не должен быть равен нулю.")
